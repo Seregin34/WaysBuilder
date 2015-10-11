@@ -11,12 +11,15 @@ class isObstaclesTest : public QObject
 public:
     explicit isObstaclesTest(QObject *parent = 0);
     ~isObstaclesTest();
-    typedef QList<QPair<WaysMap::Coordinate, WaysMap::Coordinate> > ObstaclesList;
+
 signals:
 
 private Q_SLOTS:
+    void initTestCase();
     void test_data();
     void test();
+private:
+    WaysMap w;
 };
 
 #endif // ISOBSTACLESTEST_H

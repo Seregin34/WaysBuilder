@@ -57,6 +57,7 @@ public:
     void findBorderCoordinate(QList<QPair<Coordinate, Coordinate> > &obstacles);
     void createWaysMap(int startIn = 1);
     bool onBorder(int x, int y);
+    bool isObstacles(int x, int y);
     Coordinate getNextStep(Coordinate &c);
     WaysMap(){}
 };
