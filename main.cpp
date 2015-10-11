@@ -2,7 +2,9 @@
 #include <QDebug>
 #include <tests/findbordercoordinatetest.h>
 #include <tests/isobstaclestest.h>
+#include <tests/createwaysmaptest.h>
 void testing(){
+    QTest::qExec(new createWaysMapTest);
     QTest::qExec(new findBorderCoordinateTest);
     QTest::qExec(new isObstaclesTest);
 }
