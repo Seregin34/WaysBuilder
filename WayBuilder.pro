@@ -20,11 +20,13 @@ SOURCES += main.cpp \
     inout.cpp \
     tests/findbordercoordinatetest.cpp \
     tests/isobstaclestest.cpp \
-    tests/createwaysmaptest.cpp
+    tests/createwaysmaptest.cpp \
+    tests/getwaytest.cpp
 
 HEADERS += \
     waysmap.h \
     inout.h \
     tests/findbordercoordinatetest.h \
     tests/isobstaclestest.h \
-    tests/createwaysmaptest.h
+    tests/createwaysmaptest.h \
+    tests/getwaytest.h
