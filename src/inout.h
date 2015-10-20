@@ -25,3 +25,4 @@ int readCoordinates(QString file, QList<QPair<WaysMap::Coordinate, WaysMap::Coor
  * \return успешность
  */
 bool out(QString file, QList<WaysMap::Coordinate> &cl);
+bool outln(QString file, QString s);

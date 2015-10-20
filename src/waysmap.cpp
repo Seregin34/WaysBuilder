@@ -79,7 +79,7 @@ void WaysMap::createWaysMap(int startIn)
     for (int i = 0; i < addCord.count(); ++i){
         map.insert(addCord[i], add);
     }
-    if (!addCord.contains(end) || addCord.isEmpty()){
+    if (!addCord.contains(end) && !addCord.isEmpty()){
         createWaysMap(startIn + 1);
     }
     else if (!addCord.isEmpty()){

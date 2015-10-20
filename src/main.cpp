@@ -16,12 +16,19 @@ void testing(){
     QTest::qExec(new isObstaclesTest);
 }
 
-int main(int argc, char *argv[])
+int main(int argc, char *vargv[])
 {
-    if (argc == 1){
-        testing();
-    }
-    else if (argc == 3){
+//    if (argc == 1){
+//        testing();
+//    }
+//    else if (argc == 3){
+    if (true){
+        char argv[20][80] = {
+            "adds",
+            "incord.txt",
+            "inobstr.txt"
+        };
+
         WaysMap::Coordinate start, end;
         switch (readStartEnd(argv[1], start, end)) {
         case 1:
@@ -46,6 +53,7 @@ int main(int argc, char *argv[])
         WaysMap w(start, end, list);
         QList<WaysMap::Coordinate> res = w.getWay();
         if (res.isEmpty()){
+            outln("out.txt", QString("Can not build the way"));
             qDebug() << "Can not build the way";
             return 0;
         }
